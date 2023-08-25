@@ -1,6 +1,5 @@
 version: v1.1.0
 steps:
-- cmd: echo Hello world
 - build: -t {{.Run.Registry}}/httpd-flutter-app:{{.Run.ID}} -t {{.Run.Registry}}/httpd-flutter-app:latest .
 - push:
   - {{.Run.Registry}}/httpd-flutter-app:{{.Run.ID}}
